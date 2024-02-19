@@ -82,6 +82,10 @@ dependencies {
 
     //navigation
     implementation(libs.navigationCompose)
+
+    implementation(libs.coroutine)
+
+    implementation(libs.lifeCycleRuntime)
 }
 
 // Allow references to generated code

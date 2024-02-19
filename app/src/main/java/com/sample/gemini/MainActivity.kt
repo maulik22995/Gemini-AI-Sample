@@ -10,7 +10,7 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.sample.gemini.ui.presentation.Text.Text
+import com.sample.gemini.ui.presentation.text.Text
 import com.sample.gemini.ui.presentation.home.Home
 import com.sample.gemini.ui.theme.GeminiSampleTheme
 import dagger.hilt.android.AndroidEntryPoint
