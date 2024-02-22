@@ -24,7 +24,7 @@ object Gemini {
     @GeminiProVision
     fun provideGeminiProVision(): GenerativeModel {
         return GenerativeModel(
-            modelName = "gemini-pro",
+            modelName = "gemini-pro-vision",
             apiKey = BuildConfig.apiKey
         )
     }

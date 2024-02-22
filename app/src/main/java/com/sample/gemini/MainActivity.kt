@@ -12,6 +12,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.sample.gemini.ui.presentation.text.Text
 import com.sample.gemini.ui.presentation.home.Home
+import com.sample.gemini.ui.presentation.image.Image
 import com.sample.gemini.ui.theme.GeminiSampleTheme
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -34,7 +35,9 @@ class MainActivity : ComponentActivity() {
                         composable("text") {
                             Text(navController)
                         }
-
+                        composable("image") {
+                            Image(navController)
+                        }
                     }
                 }
             }

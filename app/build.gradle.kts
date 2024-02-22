@@ -86,6 +86,8 @@ dependencies {
     implementation(libs.coroutine)
 
     implementation(libs.lifeCycleRuntime)
+
+    implementation(libs.coil)
 }
 
 // Allow references to generated code

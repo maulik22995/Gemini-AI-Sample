@@ -88,7 +88,10 @@ fun Home(navController: NavController = rememberNavController()) {
                         modifier = Modifier
                             .fillMaxWidth(1f)
                             .aspectRatio(1f)
-                            .padding(5.dp),
+                            .padding(5.dp)
+                            .clickable {
+                                navController.navigate("image")
+                            },
                         colors = CardDefaults.cardColors(
                             containerColor = Purple40,
                             contentColor = Color.White
