@@ -116,7 +116,11 @@ fun Home(navController: NavController = rememberNavController()) {
                     modifier = Modifier
                         .fillMaxWidth()
                         .aspectRatio(2f)
+                        .clickable {
+                            navController.navigate("chat")
+                        }
                         .padding(5.dp),
+
                     colors = CardDefaults.cardColors(
                         containerColor = Purple40,
                         contentColor = Color.White

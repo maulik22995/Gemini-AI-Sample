@@ -1,4 +1,4 @@
-package com.sample.gemini.ui.presentation.text
+package com.sample.gemini.ui.presentation.chat
 
 import android.util.Log
 import androidx.lifecycle.ViewModel
@@ -11,7 +11,7 @@ import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
-class TextViewModel @Inject constructor(@GeminiPro val generativeModel: GenerativeModel) :
+class ChatViewModel @Inject constructor(@GeminiPro val generativeModel: GenerativeModel) :
     ViewModel() {
 
     private val _textInput: MutableStateFlow<String> = MutableStateFlow("")
@@ -30,13 +30,13 @@ class TextViewModel @Inject constructor(@GeminiPro val generativeModel: Generati
         viewModelScope.launch {
             try {
                 _loader.value = true
-                generativeModel.generateContentStream(text).collect{
-                    Log.d(">>",it.text.toString())
-                    _loader.value = false
-                    _textResponse.emit(_textResponse.value  + it.text )
-                }
+                val chat = generativeModel.startChat()
+                val response = chat.sendMessage(text)
+                _textResponse.value = response.text ?: ""
+                _loader.value = false
             } catch (e: Exception) {
                 e.printStackTrace()
+                _loader.value = false
             }
         }
     }
