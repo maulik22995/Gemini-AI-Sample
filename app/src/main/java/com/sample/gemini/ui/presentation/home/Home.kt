@@ -4,6 +4,7 @@ import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.core.tween
 import androidx.compose.animation.slideIn
 import androidx.compose.animation.slideInHorizontally
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
@@ -25,6 +26,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
@@ -33,6 +35,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
+import com.sample.gemini.R
 import com.sample.gemini.ui.theme.Purple40
 
 @Composable
@@ -52,6 +55,15 @@ fun Home(navController: NavController = rememberNavController()) {
                 .fillMaxSize()
                 .background(color = Color.Black)
         ) {
+            Image(
+                painter = painterResource(id = R.drawable.gemini_logo),
+                modifier = Modifier
+                    .fillMaxWidth(0.5f)
+                    .aspectRatio(2.72f)
+                    .align(Alignment.CenterHorizontally).padding(15.dp),
+                contentDescription = ""
+            )
+
             Row {
                 AnimatedVisibility(visible = animate, enter = slideInHorizontally(tween(500)) {
                     -it

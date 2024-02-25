@@ -23,9 +23,6 @@ import javax.inject.Inject
 class ImageViewModel @Inject constructor(@GeminiProVision val generativeModel: GenerativeModel) :
     ViewModel() {
 
-    private val _textInput: MutableStateFlow<String> = MutableStateFlow("")
-    val textInput get() = _textInput
-
     private val _selectedImgBitmap: MutableStateFlow<Bitmap?> = MutableStateFlow(null)
     val selectedImgBitmap get() = _selectedImgBitmap
 
@@ -35,9 +32,6 @@ class ImageViewModel @Inject constructor(@GeminiProVision val generativeModel: G
     private val _textResponse: MutableStateFlow<String> = MutableStateFlow("")
     val textResponse get() = _textResponse
 
-    fun setTextInput(textInput: String) {
-        _textInput.value = textInput
-    }
 
     fun prepareImageBitmap(context: Context, path: Uri) {
         viewModelScope.launch(Dispatchers.IO) {

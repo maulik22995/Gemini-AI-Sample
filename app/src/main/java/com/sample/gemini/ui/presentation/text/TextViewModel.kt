@@ -14,21 +14,16 @@ import javax.inject.Inject
 class TextViewModel @Inject constructor(@GeminiPro val generativeModel: GenerativeModel) :
     ViewModel() {
 
-    private val _textInput: MutableStateFlow<String> = MutableStateFlow("")
-    val textInput get() = _textInput
-
     private val _loader: MutableStateFlow<Boolean> = MutableStateFlow(false)
     val loader get() = _loader
 
     private val _textResponse: MutableStateFlow<String> = MutableStateFlow("")
     val textResponse get() = _textResponse
 
-    fun setTextInput(textInput : String){
-        _textInput.value = textInput
-    }
     fun fetchText(text: String) {
         viewModelScope.launch {
             try {
+                _textResponse.value = ""
                 _loader.value = true
                 generativeModel.generateContentStream(text).collect{
                     Log.d(">>",it.text.toString())
