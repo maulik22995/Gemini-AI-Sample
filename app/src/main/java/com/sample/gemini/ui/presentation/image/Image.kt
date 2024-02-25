@@ -72,13 +72,13 @@ fun Image(navController: NavController = rememberNavController()) {
             androidx.compose.foundation.Image(
                 painter = painterResource(id = R.drawable.image_plus),
                 modifier = Modifier
-                    .size(40.dp)
+                    .size(45.dp)
                     .align(
                         Alignment.CenterEnd
                     )
-                    .clip(shape = RoundedCornerShape(20.dp))
+                    .clip(shape = RoundedCornerShape(25.dp))
                     .background(Purple40)
-                    .padding(8.dp)
+                    .padding(10.dp)
                     .clickable {
                         pickMedia.launch(PickVisualMediaRequest(ActivityResultContracts.PickVisualMedia.ImageOnly))
                     },
