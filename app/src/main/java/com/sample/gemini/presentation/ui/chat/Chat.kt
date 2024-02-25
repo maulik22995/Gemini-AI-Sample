@@ -1,4 +1,4 @@
-package com.sample.gemini.ui.presentation.chat
+package com.sample.gemini.presentation.ui.chat
 
 import android.util.Log
 import androidx.compose.foundation.Image
@@ -29,9 +29,9 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
 import com.sample.gemini.R
-import com.sample.gemini.ui.presentation.component.AppHeader
-import com.sample.gemini.ui.presentation.component.ChatBoxView
-import com.sample.gemini.ui.theme.Purple40
+import com.sample.gemini.presentation.component.AppHeader
+import com.sample.gemini.presentation.component.ChatBoxView
+import com.sample.gemini.presentation.theme.Purple40
 
 @Composable
 fun Chat(navController: NavController = rememberNavController()) {

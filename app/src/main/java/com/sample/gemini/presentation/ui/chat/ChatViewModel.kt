@@ -1,4 +1,4 @@
-package com.sample.gemini.ui.presentation.chat
+package com.sample.gemini.presentation.ui.chat
 
 import android.util.Log
 import androidx.lifecycle.ViewModel

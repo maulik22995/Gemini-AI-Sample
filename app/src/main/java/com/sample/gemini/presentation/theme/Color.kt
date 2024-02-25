@@ -1,4 +1,4 @@
-package com.sample.gemini.ui.theme
+package com.sample.gemini.presentation.theme
 
 import androidx.compose.ui.graphics.Color
 

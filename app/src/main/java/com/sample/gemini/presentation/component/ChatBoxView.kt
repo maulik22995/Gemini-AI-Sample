@@ -1,4 +1,4 @@
-package com.sample.gemini.ui.presentation.component
+package com.sample.gemini.presentation.component
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
@@ -26,7 +26,7 @@ import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.sample.gemini.R
-import com.sample.gemini.ui.theme.Purple40
+import com.sample.gemini.presentation.theme.Purple40
 
 @Composable
 fun ChatBoxView(onSend: (String) -> Unit) {

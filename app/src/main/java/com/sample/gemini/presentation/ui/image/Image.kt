@@ -1,4 +1,4 @@
-package com.sample.gemini.ui.presentation.image
+package com.sample.gemini.presentation.ui.image
 
 import android.net.Uri
 import android.util.Log
@@ -36,9 +36,9 @@ import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
 import coil.compose.AsyncImage
 import com.sample.gemini.R
-import com.sample.gemini.ui.presentation.component.AppHeader
-import com.sample.gemini.ui.presentation.component.ChatBoxView
-import com.sample.gemini.ui.theme.Purple40
+import com.sample.gemini.presentation.component.AppHeader
+import com.sample.gemini.presentation.component.ChatBoxView
+import com.sample.gemini.presentation.theme.Purple40
 
 @Composable
 fun Image(navController: NavController = rememberNavController()) {

@@ -1,4 +1,4 @@
-package com.sample.gemini.ui.presentation.text
+package com.sample.gemini.presentation.ui.text
 
 import android.util.Log
 import androidx.lifecycle.ViewModel

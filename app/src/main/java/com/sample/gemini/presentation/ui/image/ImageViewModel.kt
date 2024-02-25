@@ -1,4 +1,4 @@
-package com.sample.gemini.ui.presentation.image
+package com.sample.gemini.presentation.ui.image
 
 import android.content.Context
 import android.graphics.Bitmap

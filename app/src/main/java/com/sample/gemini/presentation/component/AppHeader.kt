@@ -1,4 +1,4 @@
-package com.sample.gemini.ui.presentation.component
+package com.sample.gemini.presentation.component
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable

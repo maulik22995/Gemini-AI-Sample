@@ -11,11 +11,11 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.google.ai.client.generativeai.Chat
-import com.sample.gemini.ui.presentation.chat.Chat
-import com.sample.gemini.ui.presentation.text.Text
-import com.sample.gemini.ui.presentation.home.Home
-import com.sample.gemini.ui.presentation.image.Image
-import com.sample.gemini.ui.theme.GeminiSampleTheme
+import com.sample.gemini.presentation.ui.chat.Chat
+import com.sample.gemini.presentation.ui.text.Text
+import com.sample.gemini.presentation.ui.home.Home
+import com.sample.gemini.presentation.ui.image.Image
+import com.sample.gemini.presentation.theme.GeminiSampleTheme
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
