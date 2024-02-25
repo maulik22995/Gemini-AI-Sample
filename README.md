@@ -58,7 +58,7 @@ Check out the full sample video: https://drive.google.com/file/d/1t8wSbivJiuJoz3
    Open Android Studio,
   
    Clone the repo,
-   https://github.com/maulik22995/Gemini-Sample.git
+   https://github.com/maulik22995/Gemini-AI-Sample.git
 
    Build the project,
 
