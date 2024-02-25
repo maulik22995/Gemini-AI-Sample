@@ -12,14 +12,14 @@ Briefly introduce Gemini-AI SDK and its capabilities. Highlight any key features
 
 To integrate Gemini-AI SDK into your Android project, follow these steps:
 
-Before you begin, ensure you have API key, You can generate API from here : https://aistudio.google.com/
+Before you begin, ensure you have an API key, You can generate API from here: https://aistudio.google.com/
 
-Cretae ```secrets.properties``` file at project level and add API key
+Create ```secrets.properties``` file at the project level and add the API key
 
 ```
 apiKey=YOUR API KEY
 ```
-### This smple demo uses three feature from Genretive AI sdk.
+### This simple demo uses three features from Generative AI SDK.
 
 - Generate text from text-only input
 - Generate text from text-and-image input (multimodal)
@@ -29,7 +29,7 @@ apiKey=YOUR API KEY
 
 ![https://github.com/maulik22995/Gemini-Sample/blob/master/sample/gemini.png](https://github.com/maulik22995/Gemini-Sample/blob/master/sample/gemini.png)
 
-Check out full sample video : https://drive.google.com/file/d/1t8wSbivJiuJoz3lWtUjoer3ASZbDQkAM/view?usp=sharing
+Check out the full sample video: https://drive.google.com/file/d/1t8wSbivJiuJoz3lWtUjoer3ASZbDQkAM/view?usp=sharing
 
 ## Used Language, Architecture & Framework
 
@@ -58,7 +58,7 @@ Check out full sample video : https://drive.google.com/file/d/1t8wSbivJiuJoz3lWt
    Open Android Studio,
   
    Clone the repo,
-   [https://github.com/maulik22995/Gemini-Sample.git](https://github.com/maulik22995/Gemini-Sample.git)
+   https://github.com/maulik22995/Gemini-Sample.git
 
    Build the project,
 
